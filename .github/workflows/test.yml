@@ -6,7 +6,8 @@ on: push
 jobs:
   test:
     name: working-directory
+    runs-on: ubuntu-latest
     steps:
       - run: pwd
-      working-directory: /tmp
+        working-directory: /tmp
       - run: pwd
