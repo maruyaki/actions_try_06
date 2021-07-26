@@ -1,0 +1,12 @@
+name: 6246
+on: push
+
+
+
+jobs:
+  test:
+    name: working-directory
+    steps:
+      - run: pwd
+      working-directory: /tmp
+      - run: pwd
