@@ -1,7 +1,9 @@
 name: 6246
 on: push
 
-
+defaults:
+  run:
+    working-directory: /usr
 
 jobs:
   test:
