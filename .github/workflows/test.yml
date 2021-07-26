@@ -1,0 +1,17 @@
+name: 6249
+on: push
+
+jobs:
+  job1:
+    name: continue-on-error 01
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+      - run: exit 1
+      
+  job2:
+    name: continue-on-error 2
+    runs-on: ubuntu-latest
+    steps:
+      - run: exit 1
+        continue-on-error: true
