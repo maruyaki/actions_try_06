@@ -1,0 +1,12 @@
+name: 6247
+on: push
+
+jobs:
+  test:
+    name: shell
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          import sys
+          print(sys.version)
+        shell: python
