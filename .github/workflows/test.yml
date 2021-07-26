@@ -1,0 +1,11 @@
+name: 6253
+on:
+  push:
+    branches-ignore:
+      - main
+      
+jobs:
+  runs-on: ubuntu-latest
+  steps:
+    - run: echo "TEST"
+    
