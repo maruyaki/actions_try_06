@@ -1,0 +1,24 @@
+name: 6251
+on: push
+
+env:
+  DEBUG: "TOP"
+
+jobs:
+  test01:
+    runs-on: ubuntu-latest
+    env:
+      DEBUG: "JOB"
+    steps:
+      - name: step 01
+        env:
+          DEBUG: "STEP"
+        run: echo ${DEBUG}
+      - name: step 02
+        run: echo ${DEBUG}
+  test02:
+    runs-on: ubuntu-latest
+    steps:
+      - name: step03
+        run: echo ${DEBUG}
+        
