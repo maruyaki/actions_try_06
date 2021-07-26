@@ -6,5 +6,5 @@ jobs:
     timeout-minuits: 30
     steps:
       - run: sleep 10
-        timuout-minuits: 15
+        timeout-minuits: 15
       
