@@ -10,7 +10,7 @@ jobs:
       - run: exit 1
       
   job2:
-    name: continue-on-error 2
+    name: continue-on-error 02
     runs-on: ubuntu-latest
     steps:
       - run: exit 1
