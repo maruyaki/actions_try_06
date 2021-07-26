@@ -4,8 +4,8 @@ on: push
 jobs:
   test:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 2
     steps:
-      - run: sleep 10
-        timeout-minutes: 5
+      - run: sleep 65
+        timeout-minutes: 1
       
