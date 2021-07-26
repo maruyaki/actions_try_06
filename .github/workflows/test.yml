@@ -1,0 +1,10 @@
+name: 6248
+on: push
+
+jobs:
+  test:
+    timeout-minuits: 30
+    steps:
+      - run: sleep 10
+        timuout-minuits: 15
+      
