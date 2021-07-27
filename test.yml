@@ -1,0 +1,12 @@
+name: 6258
+on: push
+
+jobs:
+  job:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+      fail-fast: false
+    runs-on: ${{ matrix.os }}  
+    steps:
+      - run: exit 1
