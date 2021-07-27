@@ -1,0 +1,14 @@
+name: 6015
+on: push
+
+jobs:
+ job-linux:
+   runs-on: ubuntu-latest
+   steps:
+     - run: echo "Linux OK"
+     
+ job-windows:
+   runs-on: windows-latest
+   steps:
+     - run: echo "Windows OK"
+     
