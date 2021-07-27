@@ -1,0 +1,9 @@
+name: 6018
+on: push
+
+jobs:
+  job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: hello
+        uses: docker://hello-world:latest
