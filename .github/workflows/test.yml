@@ -11,4 +11,10 @@ jobs:
    runs-on: windows-latest
    steps:
      - run: echo "Windows OK"
+ 
+ job-macos:
+   runs-on: macos-latest
+   steps:
+     - run: echo "MacOS OK"
+     
      
