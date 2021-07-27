@@ -1,0 +1,12 @@
+name: 6259
+on: push
+
+jobs:
+  job:
+    strategy:
+      matrix:
+        ver: [10, 11, 12, 13, 14, 15]
+      max-parallel: 2
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "${{ matrix.node }} OK"
